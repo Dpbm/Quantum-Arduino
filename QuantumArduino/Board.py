@@ -1,5 +1,5 @@
 class Board:
-    serial = None
+    serial_connection = None
 
     def __init__(self, port, rate, timeout):
         """
@@ -11,10 +11,8 @@ class Board:
                 timeout<float>
         """
 
-
         from serial import Serial
-        
-        self.serial  = Serial(port=port, baudrate=rate, timeout=timeout)
+        self.serial_connection  = Serial(port=port, baudrate=rate, timeout=timeout)
 
 
 

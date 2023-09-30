@@ -1,4 +1,4 @@
-from Board import Board
+from .Board import Board
 
 class Arduino(Board):
     def __init__(self, port="COM0", rate=19200, timeout=0.1):
@@ -11,4 +11,4 @@ class Arduino(Board):
                 timeout<float>: default=0.1
         """
 
-        super.__init__(port, rate, timeout)
+        super().__init__(port, rate, timeout)
